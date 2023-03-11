@@ -2,39 +2,29 @@
     max-width: 1000px;
     margin: 0 auto ;
     text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "menu content content content"
+    "footer footer footer footer";
 }
 .header{
     background: blue;
-    height: 60px;
-}
-
-.container{
-    background: red;
-    overflow: hidden;
-    display: flex;
-    height: 90px;
-    align-items: center;
-    flex-direction:row-reverse;
-    flex-direction: column;
+    grid-area: header;
 }
 
 .menu{
     background: green;
-    width: 30%;
-    height: 80px;
-    
-   
+    grid-area: menu;
 }
 
 .content{
     background: violet;
-    width: 70%;
-    height: 30px;
-    
-    
+    grid-area: content;
 }
 .footer{
     background: orange;
-    height: 30px;
+    grid-area: footer;
+
    
 }
